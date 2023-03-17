@@ -1,6 +1,7 @@
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pexels/Views/login.dart';
 import 'package:pexels/Views/profile_tabs.dart';
 import '../Service/colors.dart';
 
@@ -39,7 +40,7 @@ class _ProfileState extends State<Profile> {
           ),
           actions: <Widget>[
             PopupMenuButton(
-              icon: Icon(Icons.more_vert_rounded, color: appColors.white,),
+              icon: Icon(Icons.settings_rounded, color: appColors.white,),
               tooltip: 'Profile Menu',
               color: appColors.blue1,
               itemBuilder: (BuildContext context) {
@@ -59,12 +60,12 @@ class _ProfileState extends State<Profile> {
                   ),
                   PopupMenuItem(
                     value: 2,
-                      child: Row(
+                    child: Row(
                         children: [
                           Icon(Icons.settings, color: appColors.black, size: 20),
                           const SizedBox(width: 7),
                           Text(
-                            'Settings',
+                            'Login Page Shortcut',
                             style: TextStyle(fontSize: 15, color: appColors.black, fontWeight: FontWeight.bold,),
                           ),
                         ],
@@ -86,7 +87,10 @@ class _ProfileState extends State<Profile> {
                 ];
               },
               onSelected: (value) {
-                // Do something when a menu item is selected
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => menuItems[value]),
+                );
               },
             ),
           ],
@@ -195,3 +199,9 @@ class _ProfileState extends State<Profile> {
     );
   }
 }
+
+List<Widget> menuItems = [
+  const Login(),
+  const Login(),
+  const Login(),
+];

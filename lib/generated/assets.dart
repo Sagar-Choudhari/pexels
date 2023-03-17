@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String assets27938UploadFiles = 'assets/27938-upload-files.json';
   static const String fontsMontserratBold = 'assets/fonts/Montserrat-Bold.otf';
   static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.otf';
   static const String fontsMontserratSemiBold = 'assets/fonts/Montserrat-SemiBold.otf';
@@ -23,7 +24,6 @@ class Assets {
   static const String fontsSofiaSansSemiCondensedSemiBoldItalic = 'assets/fonts/SofiaSansSemiCondensed-SemiBoldItalic.ttf';
   static const String fontsSofiaSansSemiCondensedThin = 'assets/fonts/SofiaSansSemiCondensed-Thin.ttf';
   static const String fontsSofiaSansSemiCondensedThinItalic = 'assets/fonts/SofiaSansSemiCondensed-ThinItalic.ttf';
-  // static const String imagesBackground = 'assets/images/background(1).png';
   static const String imagesBackground = 'assets/images/background.png';
   static const String imagesBackground2 = 'assets/images/background-2.png';
   static const String imagesClock = 'assets/images/clock.png';
@@ -31,5 +31,6 @@ class Assets {
   static const String imagesGoogle = 'assets/images/google.png';
   static const String imagesLight1 = 'assets/images/light-1.png';
   static const String imagesLight2 = 'assets/images/light-2.png';
+  static const String pexelsAssets27938UploadFiles = 'assets/27938-upload-files.json';
 
 }
